@@ -134,7 +134,8 @@ int actual(char mat[3][3], int x, int y, int m, int n)
             flag=userWins(mat);
             cout<<"Logical status of User 1's game: "<<flag<<endl;
             if(flag==true)
-            {   flagstaff=true;
+            {   
+                flagstaff=true;
                 break;
             }
             cout<<"User2 Turn:"<<endl;
@@ -180,8 +181,6 @@ int main()
     cout<<"Initial Table: "<<endl;
     printArr(mat);
 
-    bool flag = userWins(mat);
-    bool flag2 = user2Wins(mat);
     actual(mat,x,y,m,n);
 
     return 0;
