@@ -123,7 +123,7 @@ bool user2Wins(char a[3][3])
 
 int actual(char mat[3][3], int x, int y, int m, int n)
 {
-    int flagstaff = false;
+    bool flagstaff = false;
     bool flag =userWins(mat);
     bool flag2=user2Wins(mat);
     while(flagstaff!=true)
